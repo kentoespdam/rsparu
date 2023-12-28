@@ -1,0 +1,514 @@
+var base_uri;
+if (window.location.host == "rsparu.kentoes.com") {
+    base_uri = window.location.origin + "/";
+}
+else {
+    base_uri = window.location.origin + "/rsparu/";
+}
+
+function reset_form() {
+    $('#frm')[0].reset();
+
+    $('#kkecamatan').val('').trigger("change");
+    $('#kkabupaten').val('').trigger("change");
+
+
+    var sKelompok = showKelompok(base_uri + "API/kelompok", null);
+    sKelompok.always(function () {
+	  $('#kdAgama').val("1").trigger("change");
+	  $('#kdPendidikan').val("1").trigger("change");
+//	  console.log("show Kelompok");
+//        var sAgama = showAgama(base_uri + "API/Agama", null);
+//        sAgama.always(function () {
+//            var sPendidikan = showPendidikan(base_uri + "API/Pendidikan", "");
+//            sPendidikan.always(function () {
+
+//            });
+//        });
+    });
+
+    $('#status').val('BK').trigger("change");
+    $('#bt_grup').hide();
+    $('#rst').show();
+    $('#src_data_pas').hide();
+}
+
+function genNoRm() {
+    var url = base_uri + "API/daftar/generateNoRm";
+    $.getJSON(url, function (json) {
+	  if (json.metaData.code == 200) {
+		$('#norm').val(json.response.norm);
+		$('#normd').val(json.response.normd);
+		$('#normb').val(json.response.normb);
+	  }
+    });
+}
+
+function findData(val) {
+    $('#' + val.replace('.', '')).css("background-color", "blue");
+    $('#' + val.replace('.', '')).css("color", "white");
+    var b = val.split("_");
+    var uri = "";
+//        console.log(b[0]);
+    if (b[0] == "rmlama") {
+	  uri = base_uri + 'API/daftar/pasien/norm/old';
+    }
+    else {
+	  uri = base_uri + 'API/daftar/pasien/norm/new';
+    }
+
+    if (b[0] == "rmlama" || b[0] == "norm") {
+	  $.post(uri, {norm: b[1]}, function (json) {
+		if (json.metaData.code == 200) {
+		    set_form(b[0], json.response.data[0], "");
+		}
+	  }, "json");
+    }
+    else {
+	  console.log("!rmlama || !norm");
+	  $.post(uri, {norm: val}, function (json) {
+		if (json.metaData.code == 200) {
+		    set_form("", json.response.data[0], "cetak");
+		}
+	  }, "json");
+    }
+}
+
+function set_form(tag, data, cetak) {
+    var uri = base_uri;
+    $('#norm').val(data.norm);
+    $('#rmlama').val(data.rmlama);
+    autoSelect('kkelompok', data.kkelompok);
+    $('#kkelompok').trigger("change");
+    autoSelect('kunj', data.kunj);
+//    if (cetak == "cetak") {
+//	  autoSelect('kunj', 'B');
+//    }
+//    else {
+//	  autoSelect('kunj', 'L');
+//    }
+    $('#noasuransi').val(data.noasuransi);
+    $('#noktp').val(data.noktp);
+    $('#nama').val(data.nama);
+    $('#alamat').val(data.alamat);
+    if (tag == "rmlama") {
+		// autoSelectLike("kprovinsi", data.kprovinsi);
+		// $('#kprovinsi').select2().trigger('change');
+		// setTimeout(function(){
+			autoSelectLike("kkabupaten", data.kkabupaten);
+			var sKab = showKabupaten(base_uri, $('#kkabupaten').val());
+			sKab.always(function () {
+				setTimeout(function(){
+					autoSelectLike('kkecamatan', data.kkecamatan);
+					var sKec = showKecamatan(base_uri, $('#kkabupaten').val(), $('#kkecamatan').val());
+					sKec.always(function () {
+						setTimeout(function () {
+						  autoSelectLike('kkelurahan', data.kkelurahan);
+						  $('#kkelurahan').select2().trigger('change');
+						}, 1000);
+					});
+				},1000);
+			});
+		// },1000);
+    }
+    else {
+	  var sProv = showProvinsi(base_uri, data.kprovinsi);
+	  sProv.always(function () {
+		setTimeout(function () {
+		    try {
+			  $('#kkabupaten').select2('destroy');
+		    } catch (err) {
+			  console.log("No Select2");
+		    }
+		    var sKab = showKabupaten(base_uri, data.kkabupaten);
+		    sKab.always(function () {
+			  setTimeout(function () {
+				try {
+				    $('#kkecamatan').select2('destroy');
+				} catch (err) {
+				    console.log("No Select2");
+				}
+				var sKec = showKecamatan(base_uri, data.kkabupaten, data.kkecamatan);
+				sKec.always(function () {
+				    setTimeout(function () {
+					  try {
+						$('#kkelurahan').select2('destroy');
+					  } catch (err) {
+						console.log("No Select2");
+					  }
+					  var sKel = showKelurahan(base_uri, data.kkecamatan, data.kkelurahan);
+				    }, 100);
+				});
+			  }, 100);
+		    });
+		}, 100);
+	  });
+    }
+    $('#rtrw').val(data.rtrw);
+    autoSelect('jeniskel', data.jeniskel);
+    $('#kdAgama').select2().val(data.kdAgama).trigger("change");
+    $('#kdPendidikan').val(data.kdPendidikan).trigger("change");
+    $('#nohp').val(data.nohp);
+    $('#tmptlahir').val(data.tmptlahir);
+    $('#tgllahir').val(data.tgllahir);
+    src_umur();
+    $('#statKawin').val(data.statKawin).trigger('change');
+    $('#pekerjaan').val(data.pekerjaan);
+    $('#pjwb').val(data.pjwb);
+    autoSelect("goldarah", data.goldarah);
+    $('#sts_pasien').val(1);
+    $('#bt_grup').show();
+    $('#rst').hide();
+}
+
+function cariData(param) {
+    $('#src_data_pas').show();
+    $('#listPasien tbody').find('tr').remove().end();
+    var uriNew = base_uri + "API/daftar/pasien/new";
+    var uriOld = base_uri + "API/daftar/pasien/old";
+    if (param == "norm") {
+	  uriNew = base_uri + "API/daftar/pasien/norm/old/new";
+	  uriOld = base_uri + "API/daftar/pasien/norm/old";
+    }
+    console.log(uriNew);
+    var fnama = $('#fnama').val();
+    var fdesa = $('#fdesa').val();
+    var fkecamatan = $('#fkecamatan').val();
+    var fkabupaten = $('#fkabupaten').val();
+    var frmlama = $('#frmlama').val();
+    var str = "";
+    $.post(uriNew, {
+	  fnama: fnama,
+	  fdesa: fdesa,
+	  fkecamatan: fkecamatan,
+	  fkabupaten: fkabupaten,
+	  norm: frmlama,
+    }, function (json) {
+	  if (json.metaData.code == 200) {
+		var str1 = "";
+		$.each(json.response.data, function (index, d) {
+//                    var data = $('#listPasien tbody').html();
+		    str = str + "<tr style='color:blue;' id='norm_" + d.norm.replace('.', '') + "'>"
+				+ "<td nowrap><span class='glyphicon glyphicon-eye-open' ondblclick=findData('norm_" + d.norm + "') id='trListPasien'></span></td>"
+				+ "<td nowrap>" + d.norm + "</td>"
+				+ "<td nowrap>" + d.rmlama + "</td>"
+				+ "<td nowrap>" + d.nama + "</td>"
+				+ "<td nowrap>" + d.jeniskel + "</td>"
+				+ "<td nowrap>" + d.kkelurahan + "</td>"
+				+ "<td nowrap>" + d.kkecamatan + "</td>"
+				+ "<td nowrap>" + d.kkabupaten + "</td>"
+				+ "<td nowrap>" + d.noktp + "</td>"
+				+ "<td nowrap>" + d.noasuransi + "</td>"
+				+ "</tr>";
+//                    set_table(data + str);
+		});
+
+	  }
+    }, "json").always(function () {
+	  $.post(uriOld, {
+		fnama: fnama,
+		fdesa: fdesa,
+		fkecamatan: fkecamatan,
+		fkabupaten: fkabupaten,
+		norm: frmlama,
+	  }, function (json) {
+		if (json.metaData.code == 200) {
+		    $.each(json.response.data, function (index, d) {
+//                        var data = $('#listPasien tbody').html();
+			  str = str + "<tr id='rmlama_" + d.rmlama.replace('.', '') + "'>"
+				    + "<td nowrap><span class='glyphicon glyphicon-eye-open' ondblclick=findData('rmlama_" + d.rmlama + "') id='trListPasien'></span></td>"
+				    + "<td nowrap></td>"
+				    + "<td nowrap>" + d.rmlama + "</td>"
+				    + "<td nowrap>" + d.nama + "</td>"
+				    + "<td nowrap>" + d.jeniskel + "</td>"
+				    + "<td nowrap>" + d.kkelurahan + "</td>"
+				    + "<td nowrap>" + d.kkecamatan + "</td>"
+				    + "<td nowrap>" + d.kkabupaten + "</td>"
+				    + "<td nowrap>" + d.noktp + "</td>"
+				    + "<td nowrap>" + d.noasuransi + "</td>"
+				    + "</tr>";
+//                        set_table(data + str);
+		    });
+		}
+	  }, "json").always(function () {
+		set_table(str);
+		$('#src_data_pas').hide();
+	  });
+    });
+
+
+}
+
+function set_table(str) {
+    $('#listPasien').DataTable().destroy();
+//        console.log(str);
+    $('#listPasien tbody').html(str);
+
+    $('#listPasien').DataTable({
+	  'paging': true,
+	  "scrollX": true,
+	  "order": [[0, "desc"]]
+    });
+}
+
+
+
+$(document).ready(function () {
+    $('#src_data_pas').hide();
+    $('#fnama').bind("keypress", function (e) {
+	  if (e.keyCode == 13) {
+		cariData();
+	  }
+    });
+    $('#fdesa').bind("keypress", function (e) {
+	  if (e.keyCode == 13) {
+		cariData();
+	  }
+    });
+    $('#fkecamatan').bind("keypress", function (e) {
+	  if (e.keyCode == 13) {
+		cariData();
+	  }
+    });
+    $('#fkabupaten').bind("keypress", function (e) {
+	  if (e.keyCode == 13) {
+		cariData();
+	  }
+    });
+    $('#frmlama').bind("keypress", function (e) {
+	  if (e.keyCode == 13) {
+		cariData('norm');
+	  }
+    });
+
+
+});
+
+function updateData(){
+	var smpn = $.post(base_uri + "Pendaftaran/Update",
+		    $('#frm').serializeArray()
+		    , function (json) {
+			  console.log(json);
+			  if (json.metaData.code == 201) {
+				$.notify({
+				    // options
+				    message: json.response.message+", "+json.response.norm,
+				}, {
+				    delay: 5000,
+				    timer: 1000,
+				    type: 'success'
+				});
+
+				var x = confirm("Cetak Kartu?");
+				if (x == true) {
+				    $('#norm').val(json.response.norm);
+				    findData(json.response.norm);
+				    cetak();
+				    $('#bt_grup').show();
+				    $('#rst').hide();
+				}
+				else {
+				    reset_form();
+				    // location.reload();	
+				}
+			  }
+			  else {
+				$.notify({
+				    // options
+				    message: json.response.message,
+				}, {
+				    delay: 5000,
+				    timer: 1000,
+				    type: 'danger'
+				});
+			  }
+		    }, "json");
+
+	  smpn.always(function (data) {
+		console.log(data);
+//                var x = confirm("Cetak RM?");
+//                if (x == true) {
+//                    
+//                } else {
+//
+//                }
+	  });
+}
+
+function cetak() {
+    var norm = $('#norm').val();
+    window.open(base_uri + "Cetak/RM/norm/" + norm);
+    window.open(base_uri + "Cetak/Kartu/norm/" + norm);
+    window.open(base_uri + "Cetak/Label/norm/" + norm);
+	reset_form();
+}
+
+$(document).ready(function () {
+    $('.datepicker').datepicker({
+	  autoclose: true,
+	  todayBtn: "linked",
+	  format: "yyyy-mm-dd"
+    });
+
+    $('#listPasien').DataTable({
+	  'paging': true,
+	  "scrollX": true,
+	  "order": [[0, "desc"]]
+    });
+
+    $('.select2').select2();
+
+    $('#bt_grup').hide();
+    $('#rst').show();
+
+    var sAgama = showAgama(base_uri + "API/Agama", null);
+    sAgama.always(function () {
+	  var sPendidikan = showPendidikan(base_uri + "API/Pendidikan", "");
+	  sPendidikan.always(function () {
+		var sTujuan = showTujuan(base_uri + "API/Tujuan", "1");
+		sTujuan.always(function () {
+		    setTimeout(function () {
+			  try {
+				$('#kprovinsi').select2('destroy');
+			  } catch (err) {
+				console.log('No Select2');
+			  }
+			  var sProv = showProvinsi(base_uri, "");
+			  sProv.always(function () {
+				console.log("selesai");
+				$('#kprovinsi').val('33').trigger('change');
+			  });
+		    }, 100);
+		});
+	  });
+    });
+
+    reset_form();
+
+    setInterval(
+		function () {
+		    var jam = new Date();
+		    var j = jam.getHours();
+		    if (j < 10) {
+			  j = "0" + j;
+		    }
+		    var m = jam.getMinutes();
+		    if (m < 10) {
+			  m = "0" + m;
+		    }
+		    var d = jam.getSeconds();
+		    if (d < 10) {
+			  d = "0" + d;
+		    }
+		    $('#jamdaftar').val(j + ":" + m + ":" + d);
+		}, 1000);
+
+    $('#kkelompok').select2().on("change", function () {
+	  setTimeout(function () {
+		try {
+		    $('#kkelompok').select2('destroy');
+		} catch (err) {
+		    console.log("No Select2");
+		}
+		var cv = $('#kkelompok').val();
+		sKelompok = showKelompok(base_uri + "API/kelompok", cv);
+	  }, 100);
+    });
+
+    $('#kprovinsi').on("change", function () {
+	  setTimeout(function () {
+		try {
+		    $('#kkabupaten').select2('destroy');
+		} catch (err) {
+		    console.log("No Select2");
+		}
+		showKabupaten(base_uri, "");
+		$('#kkecamatan').find('.optKec').remove().end();
+		$('#kkelurahan').find('.optKel').remove().end();
+	  }, 100);
+    });
+
+    $('#kkabupaten').on("change", function () {
+	  setTimeout(function () {
+		try {
+		    $('#kkecamatan').select2('destroy');
+		} catch (err) {
+		    console.log("No Select2");
+		}
+		showKecamatan(base_uri, $('#kkabupaten').val(), "");
+		$('#kkecamatan').val("").trigger("change");
+	  }, 100);
+    });
+
+    $('#kkecamatan').on("change", function () {
+	  setTimeout(function () {
+		try {
+		    $('#kkelurahan').select2('destroy');
+		} catch (err) {
+		    console.log("No Select2");
+		}
+		showKelurahan(base_uri, $('#kkecamatan').val(), "");
+	  }, 100);
+    });
+
+    $('#norm').bind("keypress", function (e) {
+	  if (e.keyCode == 13) {
+		findData("norm_" + $(this).val());
+		e.preventDefault();
+		return false;
+	  }
+    });
+
+    $('#frm').on("submit", function () {
+	  var smpn = $.post(base_uri + "Pendaftaran/Simpan",
+		    $('#frm').serializeArray()
+		    , function (json) {
+			  console.log(json);
+			  if (json.metaData.code == 201) {
+				$.notify({
+				    // options
+				    message: json.response.message+", "+json.response.norm,
+				}, {
+				    delay: 5000,
+				    timer: 1000, 
+				    type: 'success'
+				});
+
+				var x = confirm("Cetak Kartu?");
+				if (x == true) {
+				    $('#norm').val(json.response.norm);
+				    findData(json.response.norm);
+				    cetak();
+				    $('#bt_grup').show();
+				    $('#rst').hide();
+					reset_form();
+				}
+				else {
+				    reset_form();
+				    // location.reload();	
+				}
+			  }
+			  else {
+				$.notify({
+				    // options
+				    message: json.response.message,
+				}, {
+				    delay: 5000,
+				    timer: 1000,
+				    type: 'danger'
+				});
+			  }
+		    }, "json");
+
+	  smpn.always(function (data) {
+		console.log(data);
+//                var x = confirm("Cetak RM?");
+//                if (x == true) {
+//                    
+//                } else {
+//
+//                }
+	  });
+	  return false;
+    });
+});

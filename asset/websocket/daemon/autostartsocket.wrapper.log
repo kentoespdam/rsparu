@@ -1,0 +1,295 @@
+2021-08-14 08:59:51 - Stopping autostartsocket.exe
+2021-08-14 08:59:51 - ProcessKill 108
+2021-08-14 08:59:51 - Found child process: 5732 Name: conhost.exe
+2021-08-14 08:59:51 - Found child process: 188 Name: node.exe
+2021-08-14 08:59:51 - Stopping process 5732
+2021-08-14 08:59:51 - Send SIGINT 5732
+2021-08-14 08:59:51 - SIGINT to 5732 failed - Killing as fallback
+2021-08-14 08:59:51 - Stopping process 188
+2021-08-14 08:59:51 - Send SIGINT 188
+2021-08-14 08:59:51 - SIGINT to 188 failed - Killing as fallback
+2021-08-14 08:59:51 - Stopping process 108
+2021-08-14 08:59:51 - Send SIGINT 108
+2021-08-14 08:59:51 - SIGINT to 108 failed - Killing as fallback
+2021-08-14 08:59:51 - Finished autostartsocket.exe
+2021-08-14 08:59:54 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-08-14 08:59:54 - Started 6320
+2021-08-14 09:03:27 - Stopping autostartsocket.exe
+2021-08-14 09:03:27 - ProcessKill 6320
+2021-08-14 09:03:27 - Found child process: 3828 Name: conhost.exe
+2021-08-14 09:03:27 - Found child process: 7928 Name: node.exe
+2021-08-14 09:03:27 - Stopping process 3828
+2021-08-14 09:03:27 - Send SIGINT 3828
+2021-08-14 09:03:27 - SIGINT to 3828 failed - Killing as fallback
+2021-08-14 09:03:27 - Stopping process 7928
+2021-08-14 09:03:27 - Send SIGINT 7928
+2021-08-14 09:03:27 - SIGINT to 7928 failed - Killing as fallback
+2021-08-14 09:03:27 - Stopping process 6320
+2021-08-14 09:03:27 - Send SIGINT 6320
+2021-08-14 09:03:27 - SIGINT to 6320 failed - Killing as fallback
+2021-08-14 09:03:27 - Finished autostartsocket.exe
+2021-08-15 12:01:47 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-08-15 12:01:47 - Started 2672
+2021-08-15 13:50:04 - Stopping autostartsocket.exe
+2021-08-15 13:50:04 - ProcessKill 2672
+2021-08-15 13:50:05 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-08-15 17:02:14 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-08-15 17:02:14 - Started 1476
+2021-08-30 10:02:08 - Stopping autostartsocket.exe
+2021-08-30 10:02:08 - ProcessKill 1476
+2021-08-30 10:02:08 - Found child process: 2556 Name: conhost.exe
+2021-08-30 10:02:08 - Found child process: 3976 Name: node.exe
+2021-08-30 10:02:08 - Stopping process 2556
+2021-08-30 10:02:08 - Send SIGINT 2556
+2021-08-30 10:02:08 - SIGINT to 2556 failed - Killing as fallback
+2021-08-30 10:02:08 - Stopping process 3976
+2021-08-30 10:02:08 - Send SIGINT 3976
+2021-08-30 10:02:08 - SIGINT to 3976 failed - Killing as fallback
+2021-08-30 10:02:08 - Stopping process 1476
+2021-08-30 10:02:08 - Send SIGINT 1476
+2021-08-30 10:02:08 - SIGINT to 1476 failed - Killing as fallback
+2021-08-30 10:02:08 - Finished autostartsocket.exe
+2021-08-30 10:02:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-08-30 10:02:11 - Started 4484
+2021-11-06 15:56:23 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-06 15:56:23 - Started 3092
+2021-11-07 20:02:08 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-07 20:02:08 - Started 2132
+2021-11-08 02:20:39 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-08 02:20:39 - Started 3232
+2021-11-08 06:58:28 - Stopping autostartsocket.exe
+2021-11-08 06:58:28 - ProcessKill 3232
+2021-11-08 06:58:28 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-11-08 09:21:58 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-08 09:21:58 - Started 2860
+2021-12-04 15:31:30 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-04 15:31:30 - Started 4152
+2021-12-04 18:08:21 - Stopping autostartsocket.exe
+2021-12-04 18:08:21 - ProcessKill 4152
+2021-12-04 18:08:21 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-04 18:16:41 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-04 18:16:42 - Started 2480
+2021-12-09 15:38:12 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-09 15:38:12 - Started 4024
+2021-12-12 22:33:07 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-12 22:33:07 - Started 3384
+2021-12-16 13:57:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-16 13:57:41 - Started 3312
+2021-12-16 14:33:19 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-16 14:33:19 - Started 472
+2021-12-17 17:02:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-17 17:02:32 - Started 2588
+2021-12-29 09:27:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-29 09:27:00 - Started 3768
+2021-12-29 13:19:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-29 13:19:06 - Started 3832
+2022-01-01 05:45:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-01 05:45:04 - Started 3116
+2022-01-02 21:50:57 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-02 21:50:57 - Started 1188
+2022-01-17 07:12:18 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-17 07:12:18 - Started 3256
+2022-01-19 10:44:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-19 10:44:48 - Started 2564
+2022-01-25 09:16:34 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-25 09:16:34 - Started 1052
+2022-01-25 10:38:35 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-25 10:38:36 - Started 4668
+2022-01-25 13:50:13 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-25 13:50:13 - Started 3800
+2022-01-25 22:19:20 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-25 22:19:20 - Started 2404
+2022-01-26 06:34:55 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-26 06:34:55 - Started 3424
+2022-02-02 17:20:28 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-02 17:20:28 - Started 2612
+2022-02-03 15:20:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-03 15:20:25 - Started 3344
+2022-02-08 08:57:38 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-08 08:57:39 - Started 3480
+2022-02-08 17:54:38 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-08 17:54:38 - Started 2488
+2022-02-14 11:01:30 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-14 11:01:30 - Started 5284
+2022-02-14 14:10:12 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-14 14:10:13 - Started 3736
+2022-02-26 15:11:30 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-26 15:11:30 - Started 2568
+2022-03-01 06:54:09 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-01 06:54:09 - Started 3468
+2022-03-08 16:03:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-08 16:03:31 - Started 3588
+2022-03-17 12:01:52 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-17 12:01:52 - Started 2372
+2022-03-23 01:11:30 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-23 01:11:30 - Started 3544
+2022-03-26 02:33:03 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-26 02:33:03 - Started 3464
+2022-04-02 15:06:08 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-02 15:06:09 - Started 3208
+2022-04-07 11:57:37 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-07 11:57:37 - Started 3004
+2022-04-07 16:18:23 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-07 16:18:23 - Started 3100
+2022-04-08 10:03:55 - Stopping autostartsocket.exe
+2022-04-08 10:03:55 - ProcessKill 3100
+2022-04-08 10:03:55 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-04-08 10:12:13 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-08 10:12:13 - Started 5740
+2022-04-12 13:21:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-12 13:21:00 - Started 4088
+2022-05-01 14:26:47 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-01 14:26:47 - Started 4088
+2022-05-07 17:07:10 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-07 17:07:10 - Started 3816
+2022-05-27 14:38:03 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-27 14:38:03 - Started 3472
+2022-05-28 22:21:27 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-28 22:21:27 - Started 3676
+2022-06-14 08:58:36 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-14 08:58:36 - Started 5420
+2022-06-16 01:31:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-16 01:31:26 - Started 3960
+2022-06-29 06:26:56 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-29 06:26:56 - Started 3864
+2022-07-25 05:57:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-25 05:57:00 - Started 3696
+2022-07-28 06:12:32 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-28 06:12:32 - Started 3784
+2022-07-29 10:47:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-29 10:47:40 - Started 5092
+2022-07-29 11:48:26 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-29 11:48:26 - Started 4020
+2022-07-29 13:32:35 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-29 13:32:35 - Started 3916
+2022-08-02 10:28:27 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-02 10:28:27 - Started 5616
+2022-08-02 13:45:47 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-02 13:45:47 - Started 5600
+2022-08-02 14:37:16 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-02 14:37:16 - Started 3856
+2022-08-13 17:36:09 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-13 17:36:10 - Started 3940
+2022-08-16 20:45:39 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-16 20:45:39 - Started 3908
+2022-08-18 08:03:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-18 08:03:32 - Started 5440
+2022-08-18 10:55:08 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-18 10:55:08 - Started 3908
+2022-08-27 09:40:50 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-27 09:40:50 - Started 3984
+2022-08-27 11:00:32 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-27 11:00:32 - Started 3860
+2022-08-27 11:59:50 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-27 11:59:50 - Started 3832
+2022-09-06 22:11:10 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-06 22:11:10 - Started 4004
+2022-09-20 05:52:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-20 05:52:01 - Started 3820
+2022-09-26 18:49:42 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-26 18:49:42 - Started 2960
+2022-09-27 08:14:41 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-27 08:14:41 - Started 3724
+2022-09-27 11:23:57 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-27 11:23:57 - Started 3456
+2022-09-27 12:25:53 - Stopping autostartsocket.exe
+2022-09-27 12:25:53 - ProcessKill 3456
+2022-09-27 12:25:53 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-09-27 12:31:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-27 12:31:06 - Started 4008
+2022-09-27 12:55:47 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-27 12:55:48 - Started 3820
+2022-09-28 12:06:29 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-28 12:06:29 - Started 3812
+2022-09-28 12:20:16 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-28 12:20:16 - Started 3996
+2022-09-28 13:38:20 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-09-28 13:38:20 - Started 3688
+2022-10-01 12:56:36 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-01 12:56:36 - Started 4340
+2022-10-23 14:59:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-23 14:59:40 - Started 3856
+2023-04-03 13:48:09 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-04-03 13:48:09 - Started 2352
+2023-04-04 07:29:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-04-04 07:29:40 - Started 2800
+2023-04-29 07:12:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-04-29 07:12:06 - Started 1692
+2023-05-05 12:57:10 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-05-05 12:57:11 - Started 1668
+2023-05-11 09:45:24 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-05-11 09:45:24 - Started 4384
+2023-12-27 11:51:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-27 11:51:31 - Started 4668
+2023-12-28 10:10:14 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-28 10:10:15 - Started 5312
+2023-12-28 10:11:27 - Stopping autostartsocket.exe
+2023-12-28 10:11:27 - ProcessKill 5312
+2023-12-28 10:11:27 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-28 10:17:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file E:\xampp\htdocs\rsparu\asset\websocket\server.js --log "autoStartSocket wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-28 10:17:40 - Started 4740

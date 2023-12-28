@@ -1,0 +1,16 @@
+{
+  "name": "antriansocket",
+  "version": "1.0.0",
+  "description": "antrian socket",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kent-Os",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "*",
+    "nodemon": "*",
+    "express": "*"
+  }
+}
