@@ -19,3 +19,17 @@ application/logs/*
 
 asset/websocket/node_modules
 asset/websocket1/node_modules
+
+asset/video/
+asset/webfonts/
+asset/sound/
+asset/css/
+asset/dist/
+asset/fonts/
+asset/image/
+asset/less/
+asset/locales/
+asset/plugin/
+asset/scss/
+asset/temp/
+db/
