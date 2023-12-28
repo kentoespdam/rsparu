@@ -15,11 +15,16 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
-/vendor/
+application/vendor/
+application/third_party/
 
+nbproject/
+draft/
+error*
 asset/websocket/node_modules
 asset/websocket1/node_modules
 
+asset/bower_components
 asset/video/
 asset/webfonts/
 asset/sound/
@@ -32,4 +37,9 @@ asset/locales/
 asset/plugin/
 asset/scss/
 asset/temp/
+asset/js/*
+!asset/js/custom
+!asset/js/globalJs.js
+!asset/js/CusFormInputPendaftaran.js
+!asset/js/panggil_poli.js
 db/
